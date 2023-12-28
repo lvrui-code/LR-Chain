@@ -16,7 +16,7 @@ type Block struct {
 	Data      []byte // 区块中的数
 }
 
-// 构造哈希函数
+// 构造哈希函数11111
 // 对于一个区块而言，可以通过哈希算法概括其所包含的所有信息，哈希值就相当于区块的ID值，同时也可以用来检查区块所包含信息的完整性。
 func (b *Block) SetHash() {
 	information := bytes.Join([][]byte{utils.ToHexInt(b.Timestamp), b.PrevHash, b.Target, utils.ToHexInt(b.Nonce), b.Data}, []byte{})
