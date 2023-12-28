@@ -1,5 +1,5 @@
 package constcoe
 
 const (
-	DIFFICULTY = 23
+	DIFFICULTY = 12
 )
